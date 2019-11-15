@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvvmTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0Z-uE-tiQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9ZF-Th-ogD"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xYx-bT-aZB">
+                                <rect key="frame" x="0.0" y="194" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Z1X-dc-UA9"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hCO-uR-Eow">
+                                <rect key="frame" x="0.0" y="238" width="414" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hCO-uR-Eow" firstAttribute="top" secondItem="xYx-bT-aZB" secondAttribute="bottom" id="B5E-Re-suZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hCO-uR-Eow" secondAttribute="trailing" id="BgS-lv-BSc"/>
+                            <constraint firstItem="s0Z-uE-tiQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FML-lE-bg0"/>
+                            <constraint firstItem="xYx-bT-aZB" firstAttribute="top" secondItem="s0Z-uE-tiQ" secondAttribute="bottom" id="H4v-yo-0qG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hCO-uR-Eow" secondAttribute="bottom" id="HeP-Xh-3gQ"/>
+                            <constraint firstItem="xYx-bT-aZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rgf-3z-ynf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s0Z-uE-tiQ" secondAttribute="trailing" id="aRi-cj-yCK"/>
+                            <constraint firstItem="xYx-bT-aZB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e9x-cL-lYD"/>
+                            <constraint firstItem="hCO-uR-Eow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gdC-1L-Hyr"/>
+                            <constraint firstItem="s0Z-uE-tiQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vza-oS-shO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottleTableView" destination="hCO-uR-Eow" id="C1H-oU-5SM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
